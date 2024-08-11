@@ -1,0 +1,84 @@
+/* Import Custom Fonts */
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+/* Add a general styling for all elements*/
+* {
+  text-decoration: none;
+  font-family: Poppins;
+  outline: none;
+}
+nav {
+  position: fixed;
+  background-color: #fff;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  padding: 5px 11px;
+  display: flex;
+  align-items: center;
+  z-index: 999; /*so that it always stays over other elements*/
+  box-shadow:0 -0.4px 2.7px 1.5px #bbb;
+}
+nav .text-logo {
+  font-weight: bold;
+  padding: 10px;
+  color: #280274;
+  font-family: Poppins; 
+}
+.mobile-menu-btn {
+  float: right;
+  margin-left: auto;
+  background-color: transparent;
+  color: #020216;
+  font-size: 1.2rem;
+  border: none;
+}
+.desktop-nav {
+  float: right;
+  margin-left: auto;
+  display: none;
+}
+.desktop-nav-links {
+  color: #332941;
+  padding: 0 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.active-nav {
+  text-decoration: underline;
+  text-decoration-color: #332941;
+}
+#close-btn {
+  display: none;
+  font-size: 1.6rem;
+}
+.mobile-nav-content {
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #eee;
+}
+.mobile-nav-links {
+  padding: 15px;
+  color: #332941;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+main {
+  margin-top: 4rem;
+  padding: 15px;
+}
+@media(min-width:768px) {
+  #open-btn, #close-btn {
+    display: none;
+  }
+  .desktop-nav {
+    display: inline;
+  }
+}

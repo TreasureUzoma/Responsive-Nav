@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <nav>
+       <span class="text-logo">Company </span>
+       <button class="mobile-menu-btn" id="open-btn" onclick="openMenu()">
+         <i class="fa fa-bars"></i>
+       </button>
+       <button class="mobile-menu-btn" id="close-btn" onclick="closeMenu()">
+         &times;
+       </button>
+       <span class="desktop-nav">
+         <a href='/' class="desktop-nav-links active-nav">Home</a>
+         <a href='#' class="desktop-nav-links">About</a>
+         <a href='#' class="desktop-nav-links">FAQs</a>
+         <a href='#' class="desktop-nav-links">Contact</a>
+       </span>
+    </nav>
+    <div class="mobile-nav-content" id="mobile-nav-content">
+       <a href='/' class="mobile-nav-links active-nav">Home</a>
+       <a href='#' class="mobile-nav-links">About</a>
+       <a href='#' class="mobile-nav-links">FAQs</a>
+       <a href='#' class="mobile-nav-links">Contact</a>      
+    </div>
+    <main>
+      <h1>Hello World!</h1>
+    </main>
+    <footer>
+      
+    </footer>
+  </body>
+</html>
